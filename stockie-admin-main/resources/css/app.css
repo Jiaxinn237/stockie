@@ -1,0 +1,30 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    @font-face {
+        font-family: "Lexend";
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("../assets/fonts/Lexend-Regular.ttf") format("ttf");
+    }
+}
+
+/* ----------------------------------------------------------------------------Default Styling----------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, p {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="16" viewBox="0 0 1 16" fill="none"><rect width="1" height="16" rx="0.5" fill="#7E171B"/></svg>'), auto;
+}
+
+/* ----------------------------------------------------------------------------Icons Set----------------------------------------------------------------------------- */
+.notification-icon {
+    transition: transform 0.1s ease-in-out, color 100ms ease-in-out; /* Smooth transition for hover effect */
+}
+.notification-icon:hover {
+    transform: rotate(18deg); /* Adjust the angle to match the On Hover Icon's tilt */
+}
